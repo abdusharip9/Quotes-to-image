@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title-section {
+	text-align: center;
+}
+
+/* main section */
+main {
+	width: 70vh;
+	max-height: 73vh;
+	margin: 50px auto 0;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	/* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); */
+	/* box-shadow: 0 0 100px rgba(0, 4, 0, 0.25); */
+}
+
+main .settings-section {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+main .settings-section div {
+	padding: 2px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	align-items: center;
+}
+main .settings-section .settings-section__card-theme {
+	align-items: center;
+	transition: 0.3s all ease;
+}
+main .settings-section .settings-section__card-theme:hover,
+main .settings-section .settings-section__card-color:hover,
+main .settings-section .settings-section__save-btn:hover {
+	color: white;
+	border-color: white;
+	background-color: black;
+	box-shadow: 0 0 25px rgba(0, 4, 0, 0.25);
+}
+main .settings-section .settings-section__card-color {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: 0.3s all ease;
+}
+main .settings-section .settings-section__card-color input {
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+}
+main .settings-section .settings-section__card-color span {
+	margin: 3px;
+}
+main .settings-section .settings-section__save-btn {
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+/* canvas section */
+main .canvas-section {
+	border: 1px solid black;
+	border-radius: 5px;
+	max-height: 55vh;
+	margin-top: 3vh;
+}
+main .canvas-section .canvas-section__card-quotes {
+	width: 80%;
+	margin: 5vh auto;
+	margin-left: 3vh;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+main .canvas-section .canvas-section__card-quotes::before,
+main .canvas-section .canvas-section__card-quotes::after,
+main .canvas-section .canvas-section__card-author::before,
+main .canvas-section .canvas-section__card-author::after {
+	content: '"';
+}
+main .canvas-section .canvas-section__card-author {
+	width: 40%;
+	margin: 5vh auto;
+	margin-right: 5vh;
+	border: 1px solid black;
+	border-radius: 5px;
+}
