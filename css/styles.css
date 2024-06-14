@@ -4,12 +4,14 @@
 	box-sizing: border-box;
 }
 .title-section {
+	width: 100%;
 	text-align: center;
+	margin: 0 auto;
 }
 
 /* main section */
 main {
-	width: 70vh;
+	/* width: 70vh; */
 	max-height: 73vh;
 	margin: 50px auto 0;
 	padding: 20px;
@@ -88,4 +90,29 @@ main .canvas-section .canvas-section__card-author {
 	margin-right: 5vh;
 	border: 1px solid black;
 	border-radius: 5px;
+}
+/* media quieres */
+/* Container widths in Bootstrap 4 */
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
 }
